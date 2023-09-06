@@ -3,7 +3,8 @@ import tkinter as tk
 import sqlite3
 import asyncio
 
-
+conn = sqlite3.connect('data.db')
+cursor = conn.cursor()
 def button_clicked():
     print("Button clicked!")
 
